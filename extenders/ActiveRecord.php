@@ -15,7 +15,7 @@ class ActiveRecord extends CActiveRecord{
 
         return parent::beforeSave();
     }
-    public function scope() {
+    public function scopes() {
        return array_merge(parent::scopes(),array(
             'active'=>array(
                 'condition'=>' t.status="A" ',
