@@ -3,7 +3,7 @@
 * create by mr.prawee wongsa 
 * www.prawee.com
 */
-class ActiveRecord extends CActiveRecord{
+class ActiveRecord extends ActiveRecord{
    public function beforeSave() {
         if ($this->isNewRecord) {
             if ($this->hasAttribute('created'))
